@@ -120,7 +120,7 @@ let bearHat = drawing.append("rect")
     .attr("height", 25)
     .attr("fill", "red");
 
-let bearHat2 = drawing.append("rect")
+let bearHatBase = drawing.append("rect")
     .attr("class", "bear")
     .attr("x", 35 + bearX)
     .attr("y", 30 + bearY)
