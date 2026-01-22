@@ -3,7 +3,6 @@
 let bearX; // moves bear left or right
 let bearY; // moves bear up or down
 
-/*  Variable that enables you to "talk to" your SVG drawing canvas. */
 let drawing = d3.select("#canvas")
     .append("svg")
     .attr("width", 500)
