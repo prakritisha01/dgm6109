@@ -1,0 +1,40 @@
+/* Resources used: CSS Tutorial by Alfredo Sherman
+
+/* change the default font */
+
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* add spacing between the elements */
+
+header, 
+section, 
+figure, 
+p, 
+ul {
+    margin-bottom: 2rem;
+}
+
+/* add a different hover and focus state styling to the in-text link */
+
+p a:hover, 
+p a:focus {
+    color: rgba(255, 0, 0, 0.99);
+    background-color:rgb(242, 255, 0);
+}
+
+/* add a different hover and focus state styling to the image inside link */
+
+figure a:hover,
+figure a:focus {
+    color: rgb(255, 255, 255);
+    background-color: rgb(114, 16, 206);
+}
+
+/* Shorten the default width of the paragraph element and ensure it is still responsive
+when the viewport shrinks*/
+
+p {
+    max-width: 40rem;
+}
