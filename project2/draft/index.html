@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf=8">
+    <title>Credit Card Verification Form</title>
+</head>
+
+<body>
+    <h1>Credit Card Verification Form</h1>
+
+    <p> 
+        <label for="cardType">
+            Select Your Credit Card Type:
+        </label>
+        <select id="cardType"> 
+            <option value="chooseOption"> Choose Option </option>
+            <option value="charicard"> Charicard </option>
+            <option value="gengcard"> Gengcard </option>
+        </select>
+    </p>
+
+    <p>
+        <label for="cardNumber"> Enter Your Credit Card Number: </label>
+        <input type="text" id="cardNumber">
+    </p>
+
+    <p>
+        <label for="validationCode"> Enter 4-digit Validation Code: </label>
+        <input type="text" id="validationCode">
+    </p>
+
+    <p>
+        <label for="zipCode"> Enter Your ZIP Code: </label>
+        <input type="text" id="zipCode">
+    </p>
+
+    <button id="submit">Submit</button>                           
+
+    <div id="output"></div>
+
+    <script src="output.js"></script>
+    <script src="main.js"></script>
+
+</body>
+</html>
