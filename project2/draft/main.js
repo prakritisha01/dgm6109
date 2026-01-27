@@ -84,7 +84,7 @@ function validateData() {
         return false;
     }
 
-return true; /* If validation succeeds then processForm() shows the syccess message
+return true; /* If validation succeeds then processForm() shows the success message
 "All form data is valid" */
 
 }
