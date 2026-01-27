@@ -41,14 +41,20 @@ function validateData() {
         return false;
     }
 
-    if (cardType== "charicard" && cardNumber.length !=6) {
+    if (cardType== "charicard") {
+    
+        if (cardNumber.length !=6) {
         output("Charicard number must be exactly 6 digits.");
         return false;
+        }
     }
 
-    if (cardType== "gengcard" && cardNumber.length !=8) {
+    if (cardType== "gengcard") {
+         
+        if (cardNumber.length !=8) {
         output("Gengcard number must be excatly 8 digits.");
         return false;
+        }
     }
 
 /* Validate validation code */
