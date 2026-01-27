@@ -88,3 +88,18 @@ return true; /* If validation succeeds then processForm() shows the success mess
 "All form data is valid" */
 
 }
+
+// This function checks whether the user inputs are in accordance to the processing steps or not //
+
+// function evaluateAnswers() {
+
+//  let cardNumber = document.getElementById("cardNumber").value;
+//   let validationCode = document.getElementById("validationCode").value;
+//    let zipCode = document.getElementById("zipCode").value;
+
+// Rule 1: First 2 digits of validation code must be equal to sum of all digits in card number 
+
+
+// Rule 2: Last 2 digits of validation code must be equal to sum of all the digits in ZIP code 
+
+    
