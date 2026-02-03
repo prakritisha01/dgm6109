@@ -1,0 +1,152 @@
+"use strict";
+
+document.getElementById("submit").addEventListener("click", processForm);
+
+/* This is the main fucntion. It runs the code and check whether every 
+data is fine or not. If fine, then shows the message "All form data is valid". And,
+if not valid then shows error. */
+
+//BONUS POINT //
+
+function processForm() {
+
+    clear(); /* There's a function clear () in the output file. So, I just called that function to
+             clear the previous output before showing the current one. I took help of google to understand this. */
+
+
+    if (validateData()) {
+        if (evaluateAnswers()) {
+        output("All form data is valid");
+        }
+    }
+}
+
+/* This function checks whether the user inputs are in accordance to the 
+validation steps or not */
+
+function validateData() {
+
+    let cardType = document.getElementById("cardType").value;
+    let cardNumber = document.getElementById("cardNumber").value;
+    let validationCode = document.getElementById("validationCode").value;
+    let zipCode = document.getElementById("zipCode").value;
+
+/* Validate selection of the card type */
+    if (cardType == "chooseOption") {
+        output("Please select a credit card type");
+        return false;
+    }
+
+/* Validate the card number */
+    if (cardNumber == "") {
+        output("Please enter a credit card number.");
+        return false;
+    }
+
+    if (isNaN(cardNumber)) {
+        output("Credit card number must contain only numbers.");
+        return false;
+    }
+
+    if (cardType== "charicard") {
+    
+        if (cardNumber.length !=6) {
+        output("Charicard number must be exactly 6 digits.");
+        return false;
+        }
+    }
+
+    if (cardType== "gengcard") {
+         
+        if (cardNumber.length !=8) {
+        output("Gengcard number must be excatly 8 digits.");
+        return false;
+        }
+    }
+
+/* Validate validation code */
+
+    if (validationCode =="") {
+        output("Please enter the validation code.");
+        return false;
+    }
+
+    if (isNaN(validationCode)) {
+        output("Validation code must contain only numbers.");
+    }
+
+    if(validationCode.length !=4) {
+        output("Validation code must be exactly 4 digits.");
+        return false;
+    }
+
+/* Validate ZIP code */
+
+    if(zipCode =="") {
+        output("Please enter the ZIP code");
+        return false;
+    }
+
+    if(isNaN(zipCode)) {
+        output("ZIP code must contain only numbers.");
+        return false;
+    }
+
+    if(zipCode.length != 5) {
+        output("ZIP code must be exactly 5 digits.");
+        return false;
+    }
+
+return true; /* If validation succeeds then processForm() shows the success message
+"All form data is valid" */
+
+}
+
+/*This function checks whether the user inputs are in accordance to the processing 
+steps or not */
+
+function evaluateAnswers() {
+    
+    let cardNumber = document.getElementById("cardNumber").value;
+    let validationCode = document.getElementById("validationCode").value;
+    let zipCode = document.getElementById("zipCode").value;
+
+/* Rule 1: First 2 digits of validation code must be equal to sum of all digits 
+in card number */
+
+    let cardSum = 0; // total of the digits of the card number
+
+
+    for (let a = 0; a < cardNumber.length; a++) { /* This line starts the loop from "a" to "0" and the loop keeps on 
+        running as long as "a" is smaller than the length of the card number.And a++ means go digit by digit which
+         means one digit at a time */
+        cardSum = cardSum + Number(cardNumber[a]); /* contains string values in number */
+    }
+
+    let firstTwoDigits = Number(validationCode.substring(0,2));
+
+    if (firstTwoDigits != cardSum) {
+        output ("Your validation code does not match this credit card number.");
+        return false;
+    }
+
+
+/* Rule 2: Last 2 digits of validation code must be equal to sum of all the digits in 
+ZIP code */
+
+    let zipSum = 0; // store sum of ZIP code digits
+
+    for (let a= 0; a < zipCode.length; a++) {
+        zipSum = zipSum + Number(zipCode[a]);
+    }
+
+    let lastTwoDigits = Number(validationCode.substring(2,4));
+
+    if (lastTwoDigits != zipSum) {
+        output ("Your validation code does not match your address.");
+        return false;
+    }
+
+    return true;
+
+}
