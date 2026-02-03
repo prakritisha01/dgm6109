@@ -100,8 +100,8 @@ return true; /* If validation succeeds then processForm() shows the success mess
 // function evaluateAnswers() {
 
 //  let cardNumber = document.getElementById("cardNumber").value;
-//   let validationCode = document.getElementById("validationCode").value;
-//    let zipCode = document.getElementById("zipCode").value;
+//  let validationCode = document.getElementById("validationCode").value;
+//   let zipCode = document.getElementById("zipCode").value;
 
 // Rule 1: First 2 digits of validation code must be equal to sum of all digits in card number 
 
