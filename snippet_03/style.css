@@ -1,0 +1,193 @@
+/* Page styling */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    margin: 0;
+    line-height: 1.6;
+    background-color: rgb(232, 204, 165);
+    color: rgba(212, 14, 17, 0.835);
+}
+
+
+/* center main content */
+main {
+    max-width: 70rem;
+    margin: 0;
+}
+
+header,
+section {
+    padding: 1rem;
+}
+
+section {
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+}
+
+/* Navigation */
+nav {
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+}
+
+/* Menu button */
+nav button {
+    padding: 0.4rem 0.8rem;
+    background-color: rgb(199, 19, 148);
+    border: 0.5rem solid rgb(34, 34, 34);
+    cursor: pointer;
+}
+
+nav button:hover,
+nav button:focus { background-color: rgb(35, 149, 210);
+}
+
+/* Navigation list */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(34, 34, 34);
+}
+
+nav a:hover,
+nav a:focus {
+    color:rgb(35, 149, 210);
+    text-decoration: underline;
+}
+
+/* Responsive paragraph width */
+p {
+    max-width: 40rem;
+}
+
+/* In text link */
+p a {
+    color: rgb(0, 109, 91);
+}
+
+p a:hover {
+    color: rgb(3, 255, 133);
+    text-decoration: underline;
+}
+
+p a:focus {
+    outline: 2px solid rgb(0, 0, 0);
+}
+
+/* Image responsiveness */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 1rem;
+}
+
+a:hover img {
+    border: 0.5rem solid rgb(0, 109, 91);
+}
+
+a:focus img {
+    outline: 0.5rem solid rgb(0, 0, 0);
+}
+
+/* extra eleemnt button styling */
+button {
+    padding: 0.5rem 1rem;
+    background-color:rgb(199, 19, 148);
+    color: rgb(255, 255, 255);
+    border: 0.5rem solid rgb(34, 34, 34);
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+button:hover
+button:focus {
+    background-color: rgb(35, 149, 210);
+}
+
+/* Contact section elements styling */
+input {
+    padding: 0.4rem;
+    margin-top: 0.4rem;
+}
+
+input,
+button {
+    cursor: pointer;
+}
+
+/* Code snippet 3 starts from here */
+
+/* Mobile layout */
+
+@media (max-width: 20rem) {
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    #products {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    #products img {
+        max-width: 100%;
+    }
+}
+
+/* Desktop layout */
+
+@media (min-width: 64rem) {
+
+    nav {
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: row;
+    }
+
+    #products {
+        flex-direction: row;
+        gap: 2rem;
+    }
+}
+
+/* Large screen layout */
+
+@media (min-width: 120rem) {
+
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3rem;
+    }
+
+    section {
+        flex: 1 1 45%;
+    }
+
+    #home,
+    #contact {
+        flex: 1 1 100%;
+    }
+}
