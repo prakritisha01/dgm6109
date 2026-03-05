@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>Plot 1 - Screen Time vs Sleep Quality (Sketch 1)</title>
+
+<script src="d3.min.js"></script>
+</head>
+
+<body>
+<div id="container" style="margin:0 auto">
+<div id="canvas"></div>
+</div>
+
+<h1 style="text-align:center">
+    Screen Time and Sleep Quality (High Screen Time Nights)
+</h1>
+
+<p>
+    Question: When the time spent on the screen prior to sleep 
+    is more than 60 minutes, is there a reduction in the quality of sleep?
+    <hr>
+    In this visualization, the horizontal axis is occupied by screen time and
+    the quality of sleep is put on the vertical axis. The dataset is filtered to
+    keep only screen time more than 60 minutes.
+    <hr>
+    Triangles indicate total sleep time. Night with 7 or more hours of sleep are 
+    depicted with upward triangles and nights with less than 7 hours of sleep are 
+    depicted with a downward triangle.
+</p>
+
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
