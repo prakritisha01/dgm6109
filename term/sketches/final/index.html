@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Phase 3b Term Project Sketches - Final</title>
+</head>
+
+<body>
+    <h1>Phase 3b Term Project Sketches</h1>
+
+    <p>This project examines my sleep dataset relationships. The information covers date, 
+        screen time before bed (minutes), bedtime, amount of sleep (hours), quality of sleep 
+        (rated on a 1-5 scale) and disturbances (sleep talking and snoring).
+    </p>
+
+    <hr>
+
+<!--Sketch 1-->
+
+     <h2> Sketch 1 - Scatterplot </h2>
+
+     <p>
+        This visualization is based on the method of a scatterplot that was practiced in 
+        class. It looks at the connection between screen time before bed and sleep quality 
+        in addition to adding the total sleep duration to enhance the analysis.
+     </p>
+
+     <h3> Hypothesis </h3>
+
+     <p>
+        As my screen time before bed increases, my sleep quality decreases. Additionally,
+        higher screen time is also associated with fewer total sleep hours.
+     </p>
+
+     <h3> Data </h3>
+     <ul>
+        <li>Screen time before bed (minutes)</li>
+        <li>Sleep quality (1-5 scale)</li>
+        <li>Total sleep duration (hours)</li>
+     </ul>
+
+     <h3> Units and Range </h3>
+     <ul>
+        <li>Screen time: 15-155 minutes </li>
+        <li> Sleep quality: 1 (very poor) to 5 (very good)</li>
+        <li> Total sleep: 4 to 9 hours</li>
+     </ul>
+
+     <h3> Representation </h3>
+     <ul>
+        <li> Horizontal axis: Screen Time Before Bed (minutes)</li>
+        <li>Vertical axis: Sleep Quality (1–5 scale)</li>
+        <li>Shape type represents total sleep duration:
+            <ul> 
+                <li>Upright triangle indicates more sleep</li>
+                <li>Inverted triangle indicates fewer hours slept</li>
+            </ul>
+        </li>
+        <li>A dotted vertical reference line at 60 minutes highlights a screen-time threshold</li>
+        <li>The reference lines divide the graph into four quadrants: top left represents low screen
+             time and high sleep quality, top right represents high screen time and high sleep quality, 
+             bottom left represents low screen time and low sleep quality, and bottom right represents 
+             high screen time and low sleep quality </li>
+    </ul>
+
+    <p>
+        <a href="sketch1.pdf" target="_blank"><button>View Sketch 1</button> </a>
+    </p>
+
+    <hr>
+
+<!--Sketch 2-->
+
+    <h2> Sketch 2 - Time-Based Heatmap </h2>
+
+    <p>
+        The visualization examines the variation of the quality of sleep between days according to the amount 
+        of time spent on the screen before bed. Rather than the plotting of sleep quality on an axis, it is 
+        presented in a color scale, thereby allowing patterns to rise over time.
+
+    </p>
+
+    <h3>Hypothesis</h3>
+    <p>
+        Days with higher screen time before bed are more likely to display lower sleep quality values across the observed period.
+    </p>
+
+    <h3> Data </h3>
+    <ul>
+        <li>Screen time before bed (minutes)</li>
+        <li>Date</li>
+        <li>Sleep Quality (1-5 scale)</li>
+    </ul>
+
+    <h3>Units and Range</h3>
+    <ul>
+        <li>Screen time: 15-155 minutes</li>
+        <li>Date: consecutive days in the observed period</li>
+        <li>Sleep 1uality: 1 (very poor) to 5 (very good)</li>
+    </ul>
+
+    <h3>Representation</h3>
+    <ul>
+        <li>Horizontal axis: Screen Time Before Bed (minutes)</li>
+        <li>Vertical axis: Date</li>
+        <li>Color intensity represents sleep quality, where darker shades indicate lower 
+            sleep quality and lighter shades indicate higher sleep quality</li>
+    </ul>
+
+    <p>
+       <a href="sketch2.pdf" target="_blank"><button>View Sketch 2</button></a> 
+    </p>
+
+    <hr>
+
+<!--Sketch 3-->
+
+    <h2> Sketch 3 - Sleep Pulse Timeline </h2>
+
+    <p>This visualization is a pulse line of every night portrayed chronologically. 
+        The pulse provides a visual representation of the quality of sleep and incorporates 
+        the screen time and sleep disturbances into the same framework.
+    </p>
+
+    <h3>Hypothesis</h3>
+    <p>
+         Nights with higher screen time and the presence of sleep disturbances 
+         (sleep talking or snoring) are associated with lower sleep quality.
+    </p>
+
+    <h3> Data </h3>
+    <ul>
+        <li>Date</li>
+        <li>Screen time before bed (minutes)</li>
+        <li>Sleep quality (1-5 scale)</li>
+        <li>Sleep talking (yes/no)</li>
+        <li>Snoring (yes/no)</li>
+    </ul>
+
+    <h3>Units and Range</h3>
+    <ul>  
+        <li>Screen time: 15-155 minutes</li>
+        <li>Sleep quality: 1-5</li>
+        <li>Disturbance factors: present or absent</li>
+    </ul>
+
+    <h3> Representation </h3>
+    <ul>
+        <li>Horizontal axis: Date (chronological order)</li>
+        <li>Vertical axis: Sleep Quality (1–5 scale)</li>
+        <li>Pulse height represents sleep quality:
+            <ul>
+                <li>Taller pulse = higher sleep quality</li>
+                <li>Shorter pulse = lower sleep quality</li>
+            </ul>
+        </li>
+        <li>Screen time indicator:
+            <ul>
+                <li>A small heart symbol is placed at the top of the pulse 
+                    for nights with low screen time (below 60 minutes)</li>
+                <li>Nights with higher screen time do not display the heart symbol</li>
+            </ul>
+        </li>
+        <li>Sleep disturbances affect line style:
+            <ul>
+                <li>Solid line = no disturbance</li>
+                <li>Dotted line = sleep talking</li>
+                <li>Wavy line = snoring</li>
+                <li>Wavy dotted line = both sleep talking and snoring</li>
+            </ul>
+        </li>
+    </ul>
+
+    <p>
+        <a href="sketch3.pdf" target="_blank"><button>View Sketch 3</button></a> 
+    </p>
+
+    <hr>
+
+<!-- Resourced-->
+    <h3> Resources </h3>
+    <ul>
+        <li> https://www.thoughtspot.com/data-trends/data-visualization/types-of-charts-graphs#TDV12</li>
+         <li>Dear Data</li>
+    </ul>
+
+
+
+</body>
+</html>
