@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FeedRight - Diet Tool</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="logo.png" alt="FeedRight logo">
+            </a>
+
+            <nav class="site-nav">
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="index.html#feeding-basics">Feeding Basics</a></li>
+                    <li><a href="index.html#health-warning">Health Warning</a></li>
+                    <li><a href="diet-tool.html">Diet Tool</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+<!--Main content-->
+<main>
+    <section class="diet-hero">
+        <div class="container diet-hero-content">
+            <div class="diet-gallery">
+                <img src="pet-gallery.png" alt="Pet collage">
+            </div>
+
+            <div class="diet-heading">
+            <h2>CREATE YOUR PET’S WEEKLY PERSONALISED DIET CHART</h2>
+            </div>
+        </div>
+    </section>
+
+    <section class="diet-form-section">
+        <div class="container">
+            <form class="diet-form" action="confirmation.html">
+                <fieldset>
+                    <legend>Pet Type</legend>
+                    <label><input type="radio" name="pet-type" value="dog">Dog</label>
+                    <label><input type="radio" name="pet-type" value="cat">Cat</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Age Group</legend>
+                    <label><input type="radio" name="age-group" value="puppy-kitten">Puppy/Kitten (0-1 year)</label>
+                    <label><input type="radio" name="age-group" value="Adult">Adult (1-7 years)</label>
+                    <label><input type="radio" name="age-group" value="senior">Senior (7+ years)</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Size ( example; Dog/Cat)</legend>
+                    <label><input type="radio" name="age-group" value="small">Small (Chihuahua/Persian)</label>
+                    <label><input type="radio" name="age-group" value="medium">Medium (Golden Retriever/American Shorthair)</label>
+                    <label><input type="radio" name="age-group" value="large">Large  (German Shepherd/Maine Coon)</label>
+                </fieldset>
+
+                <div class="form-group">
+                    <label for="weight">Weight (lbs)</label>
+                    <input type="text" id="weight" name="weight" placeholder="Enter weight">
+                </div>
+
+                <fieldset>
+                    <legend>Activity Level</legend>
+                    <label><input type="radio" name="age-group" value="low">Low</label>
+                    <label><input type="radio" name="age-group" value="moderate">Moderate</label>
+                    <label><input type="radio" name="age-group" value="high">High</label>
+                </fieldset>
+
+                <button type="submit" class="btn">Generate Weekly Diet Chart</button>
+
+            </form>
+        </div>
+    </section>
+</main>
+
+<!--Footer-->
+<footer class="site-footer">
+    <div class="container">
+         <ul class="footer-nav">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="#feeding-basics">Feeding Basics</a></li>
+            <li><a href="#health-warning">Health Warning</a></li>
+            <li><a href="diet-tool.html">Diet Tool</a></li>
+            <li><a href="#">Privacy</a></li>
+         </ul>
+    </div>
+</footer>
+
+</body>
+</html>
