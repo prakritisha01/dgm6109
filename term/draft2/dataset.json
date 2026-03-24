@@ -1,0 +1,23 @@
+[
+  { "screenTime": 42, "sleepQuality": 3, "totalSleep": 7 },
+  { "screenTime": 15, "sleepQuality": 4, "totalSleep": 7.5 },
+  { "screenTime": 57, "sleepQuality": 2, "totalSleep": 6 },
+  { "screenTime": 35, "sleepQuality": 3, "totalSleep": 6 },
+  { "screenTime": 40, "sleepQuality": 3, "totalSleep": 3 },
+  { "screenTime": 155, "sleepQuality": 1, "totalSleep": 4 },
+  { "screenTime": 48, "sleepQuality": 3, "totalSleep": 6.5 },
+  { "screenTime": 62, "sleepQuality": 2, "totalSleep": 6 },
+  { "screenTime": 28, "sleepQuality": 4, "totalSleep": 7 },
+  { "screenTime": 33, "sleepQuality": 4, "totalSleep": 7 },
+  { "screenTime": 90, "sleepQuality": 5, "totalSleep": 9 },
+  { "screenTime": 120, "sleepQuality": 2, "totalSleep": 5 },
+  { "screenTime": 20, "sleepQuality": 5, "totalSleep": 8 },
+  { "screenTime": 75, "sleepQuality": 3, "totalSleep": 6 },
+  { "screenTime": 140, "sleepQuality": 1, "totalSleep": 4 },
+  { "screenTime": 30, "sleepQuality": 4, "totalSleep": 7 },
+  { "screenTime": 25, "sleepQuality": 4, "totalSleep": 7.5 },
+  { "screenTime": 85, "sleepQuality": 2, "totalSleep": 5.5 },
+  { "screenTime": 38, "sleepQuality": 4, "totalSleep": 7 },
+  { "screenTime": 110, "sleepQuality": 2, "totalSleep": 4.5 },
+  { "screenTime": 32, "sleepQuality": 4, "totalSleep": 7 }
+]
